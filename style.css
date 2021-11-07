@@ -1,0 +1,36 @@
+.body{
+display:flex;
+justify-content: center;
+background-repeat: no-repeat;
+align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(27, 189, 27), rgb(167, 236, 207));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background: linear-gradient(rgb(175, 22, 22), rgb(131, 131, 38));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
